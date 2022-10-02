@@ -1,5 +1,70 @@
-.bg-color-black { background-color: black; }
-.border-around {
+.bg-color-black {
+  background-color: black;
+}
+
+.wd-color-white {
+  color: white
+}
+
+.wd-color-light-gray {
+  color: rgb(110, 118, 125)
+}
+
+.wd-border-color-dark-gray {
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-border-bottom-solid {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.wd-border-around {
   border-style: solid;
   border-width: 1px;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.wd-margin-left-small1 {
+  margin-left: 12px;
+}
+
+.wd-margin-left-small2 {
+  margin-left: 16px;
+}
+
+.wd-margin-left-large {
+  margin-left: 52px;
+}
+
+.wd-margin-right-small1 {
+  margin-right: 12px;
+}
+
+.wd-margin-right-small2 {
+  margin-right: 16px;
+}
+
+.wd-margin-right-large {
+  margin-right: 52px;
+}
+
+.wd-font-size-small {
+  font-size: 13px;
+}
+
