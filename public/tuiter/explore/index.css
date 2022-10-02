@@ -153,3 +153,7 @@ a:active { text-decoration: none; }
   padding-left: 36px;
 }
 
+.wd-icon-size {
+  width:15px;
+  height: 15px;
+}
