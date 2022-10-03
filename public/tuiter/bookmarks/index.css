@@ -75,14 +75,9 @@ ul {
   height: 15px;
 }
 
-.wd-overflow-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis
-}
-
 .wd-max-two-lines {
   height: 2.5em;
   max-lines: 2;
   overflow: hidden;
+  font-weight: bold;
 }
