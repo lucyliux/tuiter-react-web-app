@@ -68,3 +68,16 @@ a:active {
   font-size: 13px;
 }
 
+.wd-font-size-medium {
+  font-size: 15px;
+}
+.wd-font-size-medium2 {
+  font-size: 18px;
+}
+.wd-font-size-large {
+  font-size: 30px;
+}
+
+
+
+.wd-width-full { width: 100%; }
