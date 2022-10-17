@@ -36,9 +36,11 @@ const NavigationSidebar = () => {
        <span class="d-none d-xl-inline"> More</span>
      </a>
    </div>
-     <button href="tweet.html"
-        class="btn btn-primary btn-block rounded-pill mt-2 w-100">
-        Tweet</button>
+     <div class="d-grid mt-2">
+     <a href="../tuit.html"
+        class="btn btn-primary btn-block rounded-pill">
+        Tweet</a>
+   </div>
  `;
 };
 export default NavigationSidebar;
