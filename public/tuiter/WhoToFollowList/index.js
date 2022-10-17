@@ -13,7 +13,3 @@ const WhoToFollowList = () => {
    `;
 };
 export default WhoToFollowList;
-
-// $("#wd-who").append(`
-//   ${WhoToFollowList()}
-// `);
