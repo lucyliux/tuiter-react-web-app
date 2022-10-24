@@ -1,0 +1,30 @@
+.wd-tabs li {
+  display: inline;
+}
+
+.wd-tabs {
+  padding-left: 0px;
+}
+
+.wd-selected {
+  border-bottom: 2px blue solid;
+  padding-bottom: 20px;
+}
+
+.wd-nudge-up {
+  bottom: 21px;
+  left: 35px;
+}
+
+.wd-nudge-up1 {
+  bottom: 5px;
+  left: 15px;
+}
+
+.wd-bottom-2 {
+  bottom: 2px;
+}
+
+.wd-bottom-4 {
+  bottom: 4px;
+}
