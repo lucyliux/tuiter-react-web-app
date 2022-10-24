@@ -16,6 +16,7 @@ const ExploreComponent = () => {
           ></i>
         </div>
         <div className="col-1">
+          {/*eslint-disable-next-line*/}
           <a
             href="explore-settings.html"
             className="wd-bottom-4 text-primary float-end bi
@@ -25,17 +26,20 @@ const ExploreComponent = () => {
       </div>
       <ul className="nav nav-pills mb-2">
         <li className="nav-item">
+          {/*eslint-disable-next-line*/}
           <a className="nav-link active">For You</a>
         </li>
         <li className="nav-item">
+          {/*eslint-disable-next-line*/}
           <a className="nav-link">Trending</a>
         </li>
         <li className="nav-item">
+          {/*eslint-disable-next-line*/}
           <a className="nav-link">News</a>
         </li>
       </ul>
       <div className="position-relative mb-2">
-        <img src="/images/starship.jpg" className="w-100" />
+        <img src="/images/starship.jpg" className="w-100" alt={"starship"} />
         <h1 className="position-absolute wd-nudge-up1 text-white">
           SpaceX Starship
         </h1>
