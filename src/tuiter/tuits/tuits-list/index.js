@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import PostSummaryItem from "./post-summary-item";
+import TuitItem from "./tuit-item";
 
-const TuitItem = () => {
+const TuitsList = () => {
   const postsArray = useSelector((state) => state.tuits);
   return (
     <ul className="list-group">
@@ -12,4 +12,4 @@ const TuitItem = () => {
     </ul>
   );
 };
-export default TuitItem;
+export default TuitsList;
