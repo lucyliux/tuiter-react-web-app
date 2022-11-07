@@ -18,11 +18,11 @@ function Tuiter() {
       <div className="row mt-2">
         <div className="col-2 col-md-2 col-lg-1 col-xl-2">
           <Routes>
+            <Route path="/home" element={<NavigationSidebar active="home" />} />
             <Route
               path="/explore"
               element={<NavigationSidebar active="explore" />}
             />
-            <Route path="/home" element={<NavigationSidebar active="home" />} />
           </Routes>
         </div>
         <div
@@ -30,8 +30,8 @@ function Tuiter() {
           style={{ position: "relative" }}
         >
           <Routes>
-            <Route path="/explore" element={<ExploreComponent />} />
             <Route path="/home" element={<HomeComponent />} />
+            <Route path="/explore" element={<ExploreComponent />} />
           </Routes>
         </div>
         <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
