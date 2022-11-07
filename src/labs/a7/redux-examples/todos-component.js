@@ -38,7 +38,7 @@ const Todos = () => {
           <input
             onChange={todoChangeHandler}
             value={todo.do}
-            className="form-control"
+            className="form-control w-75"
           />
         </li>
 

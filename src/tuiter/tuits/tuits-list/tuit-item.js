@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { deleteTuit } from "../tuits-reducer";
 import { useDispatch } from "react-redux";
+import TuitStats from "./tuit-stats";
 
 const TuitItem = ({
   tuit = {
@@ -45,31 +46,17 @@ const TuitItem = ({
               className="bi bi-x-lg float-end"
               onClick={() => deleteTuitHandler(tuit._id)}
             ></i>
-            {tuit.userName} {tuit.handle} · {tuit.time}
+            <b>{tuit.userName}</b> {tuit.handle} · {tuit.time}
           </div>
           <div style={{ "font-size": "15px" }}>{tuit.tuit}</div>
         </div>
       </div>
-      <div class="row">
-        <div class="col" style={{ "font-size": "15px" }}>
-          <i className="bi bi-chat"></i> {tuit.replies}{" "}
-        </div>
-        <div className="col" style={{ "font-size": "15px" }}>
-          <i className="bi bi-arrow-repeat"></i> {tuit.retuits}{" "}
-        </div>
-        <div className="col" style={{ "font-size": "15px" }}>
-          <i
-            className={`bi
-                    ${
-                      tuit.liked === true
-                        ? "bi-heart-fill text-danger"
-                        : "bi-heart"
-                    }`}
-          ></i>{" "}
-          {tuit.likes}{" "}
-        </div>
-        <i className="col bi bi-share" style={{ "font-size": "15px" }}></i>
-      </div>
+      <TuitStats
+        replies={tuit.replies}
+        retuits={tuit.retuits}
+        liked={tuit.liked}
+        likes={tuit.likes}
+      />
     </li>
   );
 };

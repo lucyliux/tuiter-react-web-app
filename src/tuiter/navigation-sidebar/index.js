@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const NavigationSidebar = ({ active = "explore" }) => {
   return (
@@ -7,41 +6,69 @@ const NavigationSidebar = ({ active = "explore" }) => {
       {/*eslint-disable-next-line*/}
       <a className="list-group-item">Tuiter</a>
       {/*eslint-disable-next-line*/}
+
       <a
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
         href="/tuiter/home"
       >
-        Home
+        <div className="row">
+          <i className="col-1 bi bi-house-door-fill"></i>
+          <span class="col">Home</span>
+        </div>
       </a>
+
       {/*eslint-disable-next-line*/}
       <a
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
-        href="/tuiter"
+        href="/tuiter/explore"
       >
-        Explore
+        <div className="row">
+          <i className="col-1 bi bi-hash"></i>
+          <span className="col">Explore</span>
+        </div>
+      </a>
+      {/*eslint-disable-next-line*/}
+      <a
+        className={`list-group-item
+                    ${active === "labs" ? "active" : ""}`}
+        href="/"
+      >
+        <div className="row">
+          <i className="col-1 bi bi-asterisk"></i>
+          <span className="col">Labs</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
       >
-        Notifications
+        <div className="row">
+          <i className="col-1 bi bi-bell"></i>
+          <span className="col">Notifications</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
       >
-        Messages
+        <div className="row">
+          <i className="col-1 bi bi-envelope"></i>
+          <span className="col">Messages</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
       >
-        Bookmarks
+        <div className="row">
+          <i className="col-1 bi bi-bookmark"></i>
+          <span className="col">Bookmarks</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
@@ -49,7 +76,10 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     ${active === "lists" ? "active" : ""}`}
         href="#"
       >
-        Lists
+        <div className="row">
+          <i className="col-1 bi bi-card-text"></i>
+          <span className="col">Lists</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
@@ -57,7 +87,10 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     ${active === "profile" ? "active" : ""}`}
         href="#"
       >
-        Profile
+        <div className="row">
+          <i className="col-1 bi bi-person"></i>
+          <span className="col">Profile</span>
+        </div>
       </a>
       {/*eslint-disable-next-line*/}
       <a
@@ -65,7 +98,10 @@ const NavigationSidebar = ({ active = "explore" }) => {
                     ${active === "more" ? "active" : ""}`}
         href="#"
       >
-        More
+        <div className="row">
+          <i className="col-1 bi bi-three-dots"></i>
+          <span className="col">More</span>
+        </div>
       </a>
     </div>
   );
