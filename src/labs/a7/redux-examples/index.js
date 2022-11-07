@@ -3,7 +3,6 @@ import HelloReduxExampleComponent from "./hello-redux-example-component";
 import hello from "./reducers/hello.js";
 import todos from "./reducers/todos-reducer";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 import Todos from "./todos-component";
 const store = configureStore({
