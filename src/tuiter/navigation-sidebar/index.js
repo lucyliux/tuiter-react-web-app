@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavigationSidebar = ({ active = "explore" }) => {
   return (
@@ -9,6 +10,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
       <a
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
+        href="/tuiter/home"
       >
         Home
       </a>
@@ -16,7 +18,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
       <a
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
-        href="#"
+        href="/tuiter"
       >
         Explore
       </a>
