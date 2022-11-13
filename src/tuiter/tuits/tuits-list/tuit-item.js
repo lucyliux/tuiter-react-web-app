@@ -1,10 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import {
-  deleteTuitThunk,
-  updateTuitThunk,
-} from "../../../services/tuits-thunks";
+import { deleteTuitThunk } from "../../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
 
@@ -56,13 +53,7 @@ const TuitItem = ({
           <div style={{ "font-size": "15px" }}>{tuit.tuit}</div>
         </div>
       </div>
-      <TuitStats
-        // replies={tuit.replies}
-        // retuits={tuit.retuits}
-        // liked={tuit.liked}
-        // likes={tuit.likes}
-        tuit={tuit}
-      />
+      <TuitStats tuit={tuit} />
     </li>
   );
 };
