@@ -64,7 +64,7 @@ const TuitStats = ({
             dispatch(
               updateTuitThunk({
                 ...tuit,
-                dislikes: tuit.dislikes == undefined ? 1 : tuit.dislikes + 1,
+                dislikes: tuit.dislikes === undefined ? 1 : tuit.dislikes + 1,
                 disliked: true,
               })
             );
@@ -76,7 +76,7 @@ const TuitStats = ({
                         : "bi-hand-thumbs-down"
                     }`}
         ></i>{" "}
-        {tuit.dislikes == undefined ? 0 : tuit.dislikes}{" "}
+        {tuit.dislikes === undefined ? 0 : tuit.dislikes}{" "}
       </div>
       <i className="col bi bi-share" style={{ "font-size": "15px" }}></i>
     </div>
