@@ -6,7 +6,7 @@ import { findTuitsThunk } from "../../services/tuits-thunks";
 const PostSummaryList = () => {
   const { tuits } = useSelector((state) => state.tuitsData);
   const dispatch = useDispatch();
-  // eslint-disable-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     dispatch(findTuitsThunk());
   }, []);
