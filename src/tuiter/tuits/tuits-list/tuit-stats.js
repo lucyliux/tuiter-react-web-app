@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { updateTuitThunk } from "../../../services/tuits-thunks";
 
-// const TuitStats = ({ replies = 0, retuits = 0, liked = false, likes = 0 }) => {
 const TuitStats = ({
   tuit = {
     _id: 123,
@@ -60,15 +59,16 @@ const TuitStats = ({
       <div className="col" style={{ "font-size": "15px" }}>
         {" "}
         <i
-          onClick={() =>
+          onClick={() => {
+            console.log(tuit.dislikes);
             dispatch(
               updateTuitThunk({
                 ...tuit,
-                dislikes: tuit.dislikes + 1,
+                dislikes: tuit.dislikes == undefined ? 1 : tuit.dislikes + 1,
                 disliked: true,
               })
-            )
-          }
+            );
+          }}
           className={`bi
                     ${
                       tuit.disliked === true
@@ -76,7 +76,7 @@ const TuitStats = ({
                         : "bi-hand-thumbs-down"
                     }`}
         ></i>{" "}
-        {isNaN(tuit.dislikes) ? 0 : tuit.dislikes}{" "}
+        {tuit.dislikes == undefined ? 0 : tuit.dislikes}{" "}
       </div>
       <i className="col bi bi-share" style={{ "font-size": "15px" }}></i>
     </div>
