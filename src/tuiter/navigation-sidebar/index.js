@@ -14,7 +14,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
       >
         <div className="row">
           <i className="col-1 bi bi-house-door-fill"></i>
-          <span class="col">Home</span>
+          <span className="col">Home</span>
         </div>
       </a>
 

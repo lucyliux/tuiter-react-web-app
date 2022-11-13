@@ -1,7 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { deleteTuit } from "../tuits-reducer";
+import {
+  deleteTuitThunk,
+  updateTuitThunk,
+} from "../../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
 
@@ -16,9 +19,11 @@ const TuitItem = ({
     time: "2h",
     image: "tesla.png",
     liked: true,
+    disliked: false,
     replies: 123,
     retuits: 432,
     likes: 2345,
+    dislikes: 0,
     handle: "@spacex",
     tuit:
       "You want to wake up in the morning and think the future is going to" +
@@ -30,7 +35,7 @@ const TuitItem = ({
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
   return (
     <li className="list-group-item">
@@ -52,10 +57,11 @@ const TuitItem = ({
         </div>
       </div>
       <TuitStats
-        replies={tuit.replies}
-        retuits={tuit.retuits}
-        liked={tuit.liked}
-        likes={tuit.likes}
+        // replies={tuit.replies}
+        // retuits={tuit.retuits}
+        // liked={tuit.liked}
+        // likes={tuit.likes}
+        tuit={tuit}
       />
     </li>
   );
